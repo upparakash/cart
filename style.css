@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+
+.unit-option {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.unit-option input[type="radio"] {
+  display: none;
+}
+
+.unit-option label {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.unit-option label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd; /* Light bullet color */
+  border-radius: 50%;
+}
+
+.unit-option input[type="radio"]:checked + label::before {
+  background-color: #ff4081; /* Highlighted bullet color */
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+
+.discount {
+  color: #ff4081;
+  font-size: 0.9em;
+  background-color: #ffe0e9;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.price {
+  margin-top: 5px;
+  color: #333;
+}
+
+.original-price {
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.most-popular {
+  border-color: #ff4081;
+  background-color: #fff0f5;
+}
+
+.selection {
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.selection label {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.selection select {
+  padding: 5px;
+  margin-top: 3px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4081;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-to-cart:hover {
+  background-color: #e63971;
+}
